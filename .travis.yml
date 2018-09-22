@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: qXggA1vVuTjo9KOGW5XLuQt9wRf46Ad2QG+2eV6nc4hIJyRXLyIzq2afJ0zhB9EppQ1uIDgo0r+zXpXWxy4BAQBuWYNZyo7Vax0fdy/LUIrNFC+77DDPjtOb47GW2VBJ2pRTd8UPjrcknW9ak9C2olyEWUok6Gmf2sfhhFAfcrVz7VJyB8vMvg3tXMLa6YER1FJDFr65O0wTv7/y99GvGGoSGE2EWMThBTgDNOW3NaXgr1pS2s2l+IGw4DdUBHmYgo9oH45KbExnLVbv5ZGhdyDTkQSHkly+WK0MDKKv2gPWBmVp9KOrHZbfY7IvTIovOhI2TiKTKZ32RHTOYSrKhu+L7eHq3zvpb6rbwevuzMRwPaMYofaZQH2ton1l1xvCQQvSw68p5kwbotdJeXAjjubAixTZYU8O1I+dXipHxwXGnTklUCxdImA0Hwp1XybOf7pZr0evhNkZerTBZld0iPTD/gRRTLUkHaMmRgzRyCEj1DMJc2aSmBCnUWEeMJRBYJTzXZtnsK51tWtAoK7HZ9om8msTWlLPX9BK0Ht2VuzFEkI9H3Grcp/dobwdCTKwUprQ3kXNPcrJBsERj7Lqhy8i0/BulEc8cYQ7ZUxnJdvyKRl889qVP7NH0Mo4r/ByDvGlEEOeQtWAvbiJ8ge0K02mDl6d+yH3XZ4d5p3182U=
+  app: pure-wave-75314
+  on:
+    repo: norkuy/react-trello-testing
